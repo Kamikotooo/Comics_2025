@@ -1,0 +1,160 @@
+
+
+.comic-title {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    color:var(--color-purple);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comic-title{
+    color: rgb(201, 9, 9);
+}  
+ 
+.comic-wrapper {
+    border: 3px solid rgb(243, 6, 6);
+    font-family: var(--main-font);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px; 
+
+    padding: 10px;  
+}
+
+.comic__img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    position: relative;
+    border: none;
+    outline: solid 2.5px rgb(243, 6, 6);
+}
+
+.comic__item3 .text1 {
+    position: absolute;
+    top: 120px;
+    right: 23px;
+    font-size: 45px;
+
+}
+
+.cloud-img {
+    width: 150%;
+}
+    
+.comic__item3 .cloud1 {
+    position: absolute;
+    width: 200px;
+    top: -40px;
+    left: 0;
+}
+
+.comic__item3{
+    position: relative;
+}
+.comic__item3 .cloud-img1 {
+    transform: scaleX(-1);
+}
+
+
+/*.....................*/
+
+.comic__item5 .text2 {
+    position: absolute;
+    top: 119px;
+    right: -28px;
+    font-size: 30px;
+
+}
+    
+.comic__item5 .cloud2 {
+    position: absolute;
+    width: 200px;
+    top: -30px;
+    left: -48px;
+}
+
+.comic__item5{
+    position: relative;
+}
+.comic__item5 .cloud-img2 {
+    transform: scaleX(-1);
+}
+
+/*.....................*/
+
+.comic__item6 .text3 {
+    position: absolute;
+    top: 98px;
+    right: -26px;
+    font-size: 30px;
+
+}
+    
+.comic__item6 .cloud3 {
+    position: absolute;
+    width: 150px;
+    top: 30px;
+    left: 280px;
+}
+
+.comic__item6{
+    position: relative;
+}
+.comic__item6 .cloud-img3 {
+    transform: scaleX(1);
+}
+
+@media(max-width: 1205px){
+    .comic-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+}
+
+@media(max-width: 1000px){
+   
+    .comic-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media(max-width: 992px){
+
+    .comic-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 768px){
+
+    .comic-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 487px){
+
+    .comic-title {
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+        
+    }
+}
