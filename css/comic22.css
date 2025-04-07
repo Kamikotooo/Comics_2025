@@ -9,11 +9,11 @@
 }
 
 .comic-title{
-    color: rgb(0, 0, 0);
+    color: rgb(201, 9, 9);
 }  
  
 .comic-wrapper {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(243, 6, 6);
     font-family: var(--main-font);
 
     display: grid;
@@ -30,7 +30,7 @@
     object-fit:cover;
     position: relative;
     border: none;
-    outline: solid 2.5px black;
+    outline: solid 2.5px rgb(243, 6, 6);
 }
 
 .comic__item3 .text1 {
@@ -145,5 +145,16 @@
 
     .comic-title {
         font-size: 1.1rem;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        
+    }
+    to {
+        opacity: 1;
+        
     }
 }

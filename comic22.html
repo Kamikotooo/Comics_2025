@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/comic22.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Пример комикса</title>
 </head>
 
@@ -42,12 +43,12 @@
             <main>
                 <h2 class="comic-title">Озадаченный кот за столом</h2>
                 <div class="comic-wrapper">
-                    <div class="comic__item comic__item1"><img class="comic__img" src="img/comic22/1_page.png" alt="">
+                    <div class="comic__item comic__item1" data-aos="zoom-in-right"> <img class="comic__img" src="img/comic22/1_page.png" alt="">
                     </div>
-                    <div class="comic__item comic__item2"><img class="comic__img" src="img/comic22/2_page.png" alt="">
+                    <div class="comic__item comic__item2" data-aos="zoom-in-left"><img class="comic__img" src="img/comic22/2_page.png" alt="">
                     </div>
                     
-                    <div class="comic__item comic__item3">
+                    <div class="comic__item comic__item3" data-aos="zoom-in-right">
 
                         <img class="comic__img" src="img/comic22/3_page.png" alt="">
                         <div class="cloud1">
@@ -56,10 +57,10 @@
                         </div>
                     </div>
 
-                    <div class="comic__item comic__item4"><img class="comic__img" src="img/comic22/4_page.png" alt="">   
+                    <div class="comic__item comic__item4" data-aos="zoom-in-left"><img class="comic__img" src="img/comic22/4_page.png" alt="">   
                     </div>
 
-                    <div class="comic__item comic__item5">
+                    <div class="comic__item comic__item5" data-aos="zoom-in-right">
                         <img class="comic__img" src="img/comic22/5_page.png" alt="">
                         <div class="cloud2">
                             <img class="cloud-img cloud-img2" src="img/comic22/1_cloud.png" alt="оБЛАКО">
@@ -67,7 +68,7 @@
                         </div>
                     </div>  
 
-                    <div class="comic__item comic__item6">
+                    <div class="comic__item comic__item6" data-aos="zoom-in-left">
                         <img class="comic__img" src="img/comic22/6_page.png" alt="">
                         <div class="cloud3">
                             <img class="cloud-img cloud-img3" src="img/comic22/1_cloud.png" alt="оБЛАКО">
@@ -86,6 +87,10 @@
 
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
